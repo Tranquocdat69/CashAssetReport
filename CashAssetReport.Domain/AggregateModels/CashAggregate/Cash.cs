@@ -1,6 +1,6 @@
-﻿namespace CashAssetReport.Domain.AggregateModels.CashAggregate
+﻿namespace FPTS.FIT.BDRD.CashAssetReport.Services.CashAssetReport.Domain.AggregateModels.CashAggregate
 {
-    public class Cash : BaseEntity
+    public class Cash : BaseEntity, IAggregateRoot
     {
         private string _clientCode;
         public string ClientCode
@@ -148,7 +148,5 @@
             get { return _netAssetValue; }
             private set { _netAssetValue = value; }
         }
-
-
     }
 }

@@ -3,16 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashAssetReport.App", "CashAssetReport.App\CashAssetReport.App.csproj", "{DD301391-7670-48A2-BB56-CB900F0E2EA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashAssetReport.App", "CashAssetReport.App\CashAssetReport.App.csproj", "{DD301391-7670-48A2-BB56-CB900F0E2EA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashAssetReport.Domain", "CashAssetReport.Domain\CashAssetReport.Domain.csproj", "{A80A7AC7-D4EC-404F-9A9E-31FE1D772A8E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashAssetReport.Infrastructure", "CashAssetReport.Infrastructure\CashAssetReport.Infrastructure.csproj", "{BEECBB2F-CCFD-4B41-89E2-58C604EC8C4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashAssetReport.Domain", "CashAssetReport.Domain\CashAssetReport.Domain.csproj", "{A80A7AC7-D4EC-404F-9A9E-31FE1D772A8E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CCB964C9-ED3D-4E5A-BD79-44621789BF8F}"
 	ProjectSection(SolutionItems) = preProject
 		Nuget.Config = Nuget.Config
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashAssetReport.Tests.Unit", "CashAssetReport.Tests.Unit\CashAssetReport.Tests.Unit.csproj", "{D4779187-6A08-460D-97E6-B38DCC3D4776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashAssetReport.Tests.Functional", "CashAssetReport.Tests.Functional\CashAssetReport.Tests.Functional.csproj", "{AF07FFB3-03A4-45E3-B9A2-09885E3B3064}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashAssetReport.Infrastructure", "CashAssetReport.Infrastructure\CashAssetReport.Infrastructure.csproj", "{C3AA66E6-3A79-4B1C-8B8C-9CDE46C2270C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +32,18 @@ Global
 		{A80A7AC7-D4EC-404F-9A9E-31FE1D772A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A80A7AC7-D4EC-404F-9A9E-31FE1D772A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A80A7AC7-D4EC-404F-9A9E-31FE1D772A8E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BEECBB2F-CCFD-4B41-89E2-58C604EC8C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEECBB2F-CCFD-4B41-89E2-58C604EC8C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEECBB2F-CCFD-4B41-89E2-58C604EC8C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEECBB2F-CCFD-4B41-89E2-58C604EC8C4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4779187-6A08-460D-97E6-B38DCC3D4776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4779187-6A08-460D-97E6-B38DCC3D4776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4779187-6A08-460D-97E6-B38DCC3D4776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4779187-6A08-460D-97E6-B38DCC3D4776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF07FFB3-03A4-45E3-B9A2-09885E3B3064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF07FFB3-03A4-45E3-B9A2-09885E3B3064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF07FFB3-03A4-45E3-B9A2-09885E3B3064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF07FFB3-03A4-45E3-B9A2-09885E3B3064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3AA66E6-3A79-4B1C-8B8C-9CDE46C2270C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3AA66E6-3A79-4B1C-8B8C-9CDE46C2270C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3AA66E6-3A79-4B1C-8B8C-9CDE46C2270C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3AA66E6-3A79-4B1C-8B8C-9CDE46C2270C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

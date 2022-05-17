@@ -1,6 +1,9 @@
-﻿namespace CashAssetReport.Infrastructure
+﻿namespace FPTS.FIT.BDRD.CashAssetReport.Services.CashAssetReport.Infrastructure
 {
-    public class CashAssetReportDbContext
+    public class CashAssetReportDbContext : DbContext
     {
+        public CashAssetReportDbContext(DbContextOptions options) : base(options)
+        {
+        }
     }
 }

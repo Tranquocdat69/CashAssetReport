@@ -1,20 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>disable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>dotnet-CashAssetReport.App-36C1C4B9-38D3-4B6E-851C-91CBAF9FC506</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>FPTS.FIT.BDRD.CashAssetReport.Services.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<UserSecretsId>dotnet-CashAssetReport.App-36C1C4B9-38D3-4B6E-851C-91CBAF9FC506</UserSecretsId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="FPTS.EventBus.Kafka" Version="1.0.1-alpha.2" />
-    <PackageReference Include="FPTS.Logger.Kafka" Version="1.0.1-alpha.3" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="FPTS.EventBus.Kafka" Version="1.0.1-alpha.2" />
+		<PackageReference Include="FPTS.Logger.Kafka" Version="1.0.1-alpha.3" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CashAssetReport.Domain\CashAssetReport.Domain.csproj" />
-    <ProjectReference Include="..\CashAssetReport.Infrastructure\CashAssetReport.Infrastructure.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\CashAssetReport.Domain\CashAssetReport.Domain.csproj" />
+		<ProjectReference Include="..\CashAssetReport.Infrastructure\CashAssetReport.Infrastructure.csproj" />
+	</ItemGroup>
 </Project>

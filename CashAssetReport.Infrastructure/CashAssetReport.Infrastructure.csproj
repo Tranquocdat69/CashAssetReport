@@ -1,13 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>FPTS.FIT.BDRD.CashAssetReport.Services.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CashAssetReport.Domain\CashAssetReport.Domain.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="NewFolder\**" />
+		<EmbeddedResource Remove="NewFolder\**" />
+		<None Remove="NewFolder\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Oracle.EntityFrameworkCore" Version="6.21.61" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CashAssetReport.Domain\CashAssetReport.Domain.csproj" />
+	</ItemGroup>
 
 </Project>
