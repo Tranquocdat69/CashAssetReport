@@ -1,8 +1,9 @@
 IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
+    .ConfigureServices((hostContext, services) =>
     {
+        services.UseServiceCollectionConfiguration(hostContext.Configuration);
     })
     .Build();
 
-
+host.UseHostConfiguration();
 await host.RunAsync();

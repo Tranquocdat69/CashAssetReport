@@ -9,144 +9,124 @@
             private set { _clientCode = value; }
         }
 
-        private string _purchasingPowerTotal;
-        public string PurchasingPowerTotal
+        private decimal? _purchasingPowerTotal;
+        public decimal? PurchasingPowerTotal
         {
             get { return _purchasingPowerTotal; }
             private set { _purchasingPowerTotal = value; }
         }
 
-        private string _cashAmount;
-        public string CashAmount
+        private decimal? _cashAmount;
+        public decimal? CashAmount
         {
             get { return _cashAmount; }
             private set { _cashAmount = value; }
         }
 
-        private string _advanceAmount;
-        public string AdvanceAmount
+        private decimal? _advanceAmount;
+        public decimal? AdvanceAmount
         {
             get { return _advanceAmount; }
             private set { _advanceAmount = value; }
         }
 
-        private string _remainingBuyingPower;
-        public string RemainingBuyingPower
+        private decimal? _remainingBuyingPower;
+        public decimal? RemainingBuyingPower
         {
             get { return _remainingBuyingPower; }
             private set { _remainingBuyingPower = value; }
         }
 
-        private string _pendingBuyCash;
-        public string PendingBuyCash
+        private decimal? _pendingBuyCash;
+        public decimal? PendingBuyCash
         {
             get { return _pendingBuyCash; }
             private set { _pendingBuyCash = value; }
         }
 
-        private string _matchedBuyCash;
-        public string MatchedBuyCash
+        private decimal? _matchedBuyCash;
+        public decimal? MatchedBuyCash
         {
             get { return _matchedBuyCash; }
             private set { _matchedBuyCash = value; }
         }
 
-        private string _transferringAmount;
-        public string TransferringAmount
+        private decimal? _transferringAmount;
+        public decimal? TransferringAmount
         {
             get { return _transferringAmount; }
             private set { _transferringAmount = value; }
         }
 
-        private string _remainingCashAmount;
-        public string RemainingCashAmount
+        private decimal? _remainingCashAmount;
+        public decimal? RemainingCashAmount
         {
             get { return _remainingCashAmount; }
             private set { _remainingCashAmount = value; }
         }
 
-        private string _remainingDebt;
-        public string RemainingDebt
+        private decimal? _remainingDebt;
+        public decimal? RemainingDebt
         {
             get { return _remainingDebt; }
             private set { _remainingDebt = value; }
         }
 
-        private string _debtInterest;
-        public string DebtInterest
+        private decimal? _debtInterest;
+        public decimal? DebtInterest
         {
             get { return _debtInterest; }
             private set { _debtInterest = value; }
         }
 
-        private string _receivableCashT0;
-        public string ReceivableCashT0
+        private decimal? _receivableCashT0;
+        public decimal? ReceivableCashT0
         {
             get { return _receivableCashT0; }
             private set { _receivableCashT0 = value; }
         }
 
-        private string _receivableCashT1;
-        public string ReceivableCashT1
+        private decimal? _receivableCashT1;
+        public decimal? ReceivableCashT1
         {
             get { return _receivableCashT1; }
             private set { _receivableCashT1 = value; }
         }
 
-        private string _receivableCashT2;
-        public string ReceivableCashT2
+        private decimal? _receivableCashT2;
+        public decimal? ReceivableCashT2
         {
             get { return _receivableCashT2; }
             private set { _receivableCashT2 = value; }
         }
 
-        private string _receivableMatureCW;
-        public string ReceivableMatureCW
+        private decimal? _receivableMatureCW;
+        public decimal? ReceivableMatureCW
         {
             get { return _receivableMatureCW; }
             private set { _receivableMatureCW = value; }
         }
 
-        private string _receivableCashOddlot;
-        public string ReceivableCashOddlot
+        private decimal? _receivableCashOddlot;
+        public decimal? ReceivableCashOddlot
         {
             get { return _receivableCashOddlot; }
             private set { _receivableCashOddlot = value; }
         }
 
-        private string _receivableCashDevidend;
-        public string ReceivableCashDevidend
+        private decimal? _receivableCashDevidend;
+        public decimal? ReceivableCashDevidend
         {
             get { return _receivableCashDevidend; }
             private set { _receivableCashDevidend = value; }
         }
 
-        private string _receivableCashOther;
-        public string ReceivableCashOther
-        {
-            get { return _receivableCashOther; }
-            private set { _receivableCashOther = value; }
-        }
-
-        private string _receivableCashTotal;
-        public string ReceivableCashTotal
-        {
-            get { return _receivableCashTotal; }
-            private set { _receivableCashTotal = value; }
-        }
-
-        private string _fees;
-        public string Fees
+        private decimal? _fees;
+        public decimal? Fees
         {
             get { return _fees; }
             private set { _fees = value; }
         }
 
-        private string _netAssetValue;
-        public string NetAssetValue
-        {
-            get { return _netAssetValue; }
-            private set { _netAssetValue = value; }
-        }
     }
 }

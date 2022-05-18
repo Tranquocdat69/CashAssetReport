@@ -13,8 +13,10 @@
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<BaseEntity>();
+            modelBuilder.Ignore<BaseDomainEvent>();
             modelBuilder.ApplyConfiguration(new CashEntityTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new CashHisEntityTypeConfiguration());
+            //modelBuilder.ApplyConfiguration(new CashHisEntityTypeConfiguration());
         }
 
         public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default)
