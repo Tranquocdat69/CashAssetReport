@@ -2,5 +2,6 @@
 {
     public interface IInMemoryCashRepository : IKeyValuePairRepository<Cash, string>
     {
+        public int Count();
     }
 }
