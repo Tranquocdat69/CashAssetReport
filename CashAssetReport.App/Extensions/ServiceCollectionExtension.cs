@@ -13,8 +13,7 @@ namespace FPTS.FIT.BDRD.CashAssetReport.Services.CashAssetReport.App.Extensions
         public static IServiceCollection UseServiceCollectionConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddLoggerConfiguration(configuration)
-                .AddPersistanceConfiguration(configuration)
-                .AddPersistanceConfiguration(configuration)
+                .AddPersistenceConfiguration(configuration)
                 .AddMediatorConfiguration()
                 .AddScopedServices();
 
@@ -54,7 +53,7 @@ namespace FPTS.FIT.BDRD.CashAssetReport.Services.CashAssetReport.App.Extensions
         /// <para><b>Cấu hình kết nối đến cơ sở dữ liệu</b></para>
         /// </summary>
         /// <param name="configuration"></param>
-        private static IServiceCollection AddPersistanceConfiguration(this IServiceCollection services, IConfiguration configuration)
+        private static IServiceCollection AddPersistenceConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
             var dbConnectionString = configuration.GetConnectionString(c_dbConnectionKey);
             services.AddDbContext<CashAssetReportDbContext>((options) =>
